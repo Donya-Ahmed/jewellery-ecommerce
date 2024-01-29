@@ -14,7 +14,12 @@ module.exports = {
       },
 
       colors:{
-         gold:"#b4934b"
+         gold:"#b4934b",
+         goldHover:"#d5c28f",
+         copper:"#b99a45",
+         sliver:"#8d8d8d",
+         gray:"#5a5a5a",
+         lightGray:"#747474"
       }
     },
   },

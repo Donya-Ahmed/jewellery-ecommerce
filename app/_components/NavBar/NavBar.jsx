@@ -77,14 +77,14 @@ export default function NavBar() {
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
               <a
-                className="block rounded-md bg-gold px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
+                className="block rounded-md bg-gold px-5 py-2.5 text-sm font-medium text-white transition hover:bg-goldHover"
                 href="/"
               >
                 Login
               </a>
 
               <a
-                className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block"
+                className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-gold transition hover:text-goldHover sm:block"
                 href="/"
               >
                 Register

@@ -1,0 +1,8 @@
+.bgBanner{
+    background-image: url(/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    
+}
