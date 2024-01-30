@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import styles from "./NavBar.module.css"
 export default function NavBar() {
   return (
     <header className="bg-white">
-      <div className=" flex h-16  items-center gap-8 px-4 sm:px-6 lg:px-8">
+      <div className={`flex h-16  items-center gap-8 px-4 sm:px-6 lg:px-8 ${styles.headerNav} text-gold`}>
         <a className="block text-teal-600" href="/">
           <span className="sr-only">Home</span>
         <Image src="/logo.png" alt="logo" width={70} height={70} />
@@ -12,65 +13,48 @@ export default function NavBar() {
         <div className="flex flex-1 items-center justify-end md:justify-between">
           <nav aria-label="Global" className="hidden md:block">
             <ul className="flex items-center gap-6 text-sm">
-              <li>
+              <li className={styles.liHover}>
                 <a
                   className="text-gray-500 transition hover:text-gray-500/75"
                   href="/"
                 >
                   {" "}
-                  About{" "}
+                  Home{" "}
                 </a>
               </li>
 
-              <li>
+              <li className={styles.liHover}>
                 <a
                   className="text-gray-500 transition hover:text-gray-500/75"
                   href="/"
                 >
                   {" "}
-                  Careers{" "}
+                  Collections{" "}
                 </a>
               </li>
 
-              <li>
+              <li className={styles.liHover}>
                 <a
                   className="text-gray-500 transition hover:text-gray-500/75"
                   href="/"
                 >
                   {" "}
-                  History{" "}
+                  About Us{" "}
                 </a>
               </li>
 
-              <li>
+              <li className={styles.liHover}>
                 <a
                   className="text-gray-500 transition hover:text-gray-500/75"
                   href="/"
                 >
                   {" "}
-                  Services{" "}
+                  Contact Us{" "}
                 </a>
               </li>
 
-              <li>
-                <a
-                  className="text-gray-500 transition hover:text-gray-500/75"
-                  href="/"
-                >
-                  {" "}
-                  Projects{" "}
-                </a>
-              </li>
 
-              <li>
-                <a
-                  className="text-gray-500 transition hover:text-gray-500/75"
-                  href="/"
-                >
-                  {" "}
-                  Blog{" "}
-                </a>
-              </li>
+
             </ul>
           </nav>
 

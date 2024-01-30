@@ -1,0 +1,21 @@
+.headerNav{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+.liHover{
+    position: relative;
+}
+.liHover::after{
+    content: "";
+  position: absolute;
+  left:0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color:#b4934b;
+  transition: width .3s ease-in-out;
+}
+.liHover:hover:after {
+    width: 100%;
+  }
